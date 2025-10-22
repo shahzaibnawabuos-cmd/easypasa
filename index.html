@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Pasa Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login to Pasa</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button id="login-btn">Login</button>
+    </div>
+
+    <div id="dashboard" style="display: none;">
+        <h2>Welcome to Pasa</h2>
+        <div id="balance">
+            <h3>Account Balance: $<span id="balance-amount">1000</span></h3>
+        </div>
+        <div id="transfer">
+            <h3>Transfer Money</h3>
+            <input type="text" id="recipient" placeholder="Recipient Account">
+            <input type="number" id="amount" placeholder="Amount">
+            <button id="transfer-btn">Transfer</button>
+        </div>
+        <div id="transactions">
+            <h3>Transaction History</h3>
+            <ul id="transaction-list">
+                <!-- Transactions will be added here -->
+            </ul>
+        </div>
+        <button id="logout-btn">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
